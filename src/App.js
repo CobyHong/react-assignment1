@@ -8,6 +8,7 @@ class App extends Component {
 		characters: []
   };
 
+  //wut
   componentDidMount() {
     axios.get('http://localhost:5000/users')
      .then(res => {
