@@ -64,7 +64,7 @@ class App extends Component {
 
   makeDeleteCall(index){
     const { characters } = this.state
-    const id_to_delete = characters[index].id
+    const id_to_delete = characters[index]._id
 
     return axios.delete('http://localhost:5000/users/' + id_to_delete)
      .then(function (response) {
